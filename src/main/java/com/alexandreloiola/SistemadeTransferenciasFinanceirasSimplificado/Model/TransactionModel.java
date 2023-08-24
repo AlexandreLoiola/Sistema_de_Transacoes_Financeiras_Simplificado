@@ -2,17 +2,24 @@ package com.alexandreloiola.SistemadeTransferenciasFinanceirasSimplificado.Model
 
 import javax.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 @Entity
 @Table(name = "TB_TRANSACTIONS")
 @Data
-public class TransactionModel {
+public class TransactionModel implements Serializable {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Id
+    @GeneratedValue(generator = "uuid-hibernate-generator")
+    @GenericGenerator(name = "uuid-hibernate-generator", strategy = "org.hibernate.id.UUIDGenerator")
+    @Type(type = "org.hibernate.type.UUIDCharType")
+    private UUID id;
 
     @Column(name = "amount", nullable = false)
     private BigDecimal amount;
