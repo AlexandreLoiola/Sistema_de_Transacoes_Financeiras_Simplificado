@@ -1,4 +1,4 @@
-package com.alexandreloiola.SistemadeTransferenciasFinanceirasSimplificado.Rest.Form;
+package com.alexandreloiola.SistemadeTransferenciasFinanceirasSimplificado.rest.Form;
 
 import lombok.Data;
 

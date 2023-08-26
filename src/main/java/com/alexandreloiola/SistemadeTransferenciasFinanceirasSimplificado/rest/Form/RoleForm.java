@@ -1,8 +1,7 @@
-package com.alexandreloiola.SistemadeTransferenciasFinanceirasSimplificado.Rest.Form;
+package com.alexandreloiola.SistemadeTransferenciasFinanceirasSimplificado.rest.Form;
 
 import lombok.Data;
 
-import javax.validation.constraints.Max;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;

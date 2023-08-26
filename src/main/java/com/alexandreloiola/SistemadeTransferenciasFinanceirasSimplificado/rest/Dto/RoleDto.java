@@ -1,4 +1,4 @@
-package com.alexandreloiola.SistemadeTransferenciasFinanceirasSimplificado.Rest.Dto;
+package com.alexandreloiola.SistemadeTransferenciasFinanceirasSimplificado.rest.Dto;
 
 
 import lombok.AllArgsConstructor;
